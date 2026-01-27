@@ -1,7 +1,7 @@
-package se.iths.oscarp.vblesson2.service;
+package se.iths.oscarp.GitAssignment.service;
 
 import org.springframework.stereotype.Service;
-import se.iths.oscarp.vblesson2.model.Accessories;
+import se.iths.oscarp.GitAssignment.model.Accessories;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,7 +17,7 @@ public class AccessoriesService {
         Accessories accessory3 = new Accessories(3, "Wireless Mouse", "Ergonomic mouse with adjustable DPI.", 24.99);
         Accessories accessory4 = new Accessories(4, "USB-C Hub", "Multi-port adapter with HDMI and USB connections.", 39.99);
         Accessories accessory5 = new Accessories(5, "Wireless Charging Pad", "Fast charging pad for compatible smartphones.", 29.99);
-        
+
         accessories.add(accessory1);
         accessories.add(accessory2);
         accessories.add(accessory3);
