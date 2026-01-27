@@ -1,10 +1,10 @@
-package se.iths.oscarp.vblesson2.controller;
+package se.iths.oscarp.GitAssignment.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import se.iths.oscarp.vblesson2.service.HomeService;
+import se.iths.oscarp.GitAssignment.service.HomeService;
 
 @Controller
 @RequestMapping("/")
@@ -19,6 +19,7 @@ public class HomeController {
     @GetMapping
     public String Home(Model model) {
         model.addAttribute("message", "Hello from service");
+        model.addAttribute("title", "Main Menu");
         return "index";
     }
 }
