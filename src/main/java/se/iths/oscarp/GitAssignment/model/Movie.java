@@ -1,4 +1,4 @@
-package se.iths.oscarp.vblesson2.model;
+package se.iths.oscarp.GitAssignment.model;
 
 public class Movie {
     private final String title;
