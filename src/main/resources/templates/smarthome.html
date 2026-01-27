@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SmartHome</title>
+</head>
+<body>
+<h1>SmartHome</h1>
+<ul>
+    <li th:each="smarthome : ${shList}">
+        <div>
+            <strong th:text="${smarthome.name}"></strong>
+            <span th:text="' - £' + ${smarthome.price}"></span>
+        </div>
+        <div>
+            <span th:text="${smarthome.description}"></span>
+        </div>
+    </li>
+</ul>
+</body>
+</html>
