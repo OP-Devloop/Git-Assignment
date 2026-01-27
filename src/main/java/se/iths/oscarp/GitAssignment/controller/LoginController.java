@@ -31,7 +31,7 @@ public class LoginController {
             return "redirect:/";
         }
 
-        model.addAttribute("error", "Invalid username or password");
+        model.addAttribute("error", "Invalid username or password try again");
         return "login";
     }
 }
