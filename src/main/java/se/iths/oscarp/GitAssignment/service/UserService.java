@@ -14,9 +14,9 @@ public class UserService {
 
     public String userList(Model model) {
         List<User> users = List.of(
-                new User("Anna", 25),
-                new User("Bert", 32),
-                new User("Charly", 22)
+                new User(1, "Anna", 25),
+                new User(2, "Bert", 32),
+                new User(3, "Charly", 22)
         );
         model.addAttribute("users", users);
         return "user";
