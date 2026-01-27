@@ -9,6 +9,7 @@ import se.iths.oscarp.vblesson2.service.HomeService;
 @Controller
 @RequestMapping("/")
 public class HomeController {
+
     private final HomeService homeService;
 
     public HomeController(HomeService homeService) {
