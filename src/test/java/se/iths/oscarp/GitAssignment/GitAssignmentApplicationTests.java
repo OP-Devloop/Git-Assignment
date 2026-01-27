@@ -1,10 +1,10 @@
-package se.iths.oscarp.vblesson2;
+package se.iths.oscarp.GitAssignment;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class VBLesson2ApplicationTests {
+class GitAssignmentApplicationTests {
 
     @Test
     void contextLoads() {

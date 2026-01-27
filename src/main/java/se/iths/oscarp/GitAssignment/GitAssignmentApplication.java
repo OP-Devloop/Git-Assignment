@@ -1,4 +1,4 @@
-package se.iths.oscarp.vblesson2;
+package se.iths.oscarp.GitAssignment;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,7 +1,7 @@
-package se.iths.oscarp.vblesson2.service;
+package se.iths.oscarp.GitAssignment.service;
 
 import org.springframework.stereotype.Service;
-import se.iths.oscarp.vblesson2.model.Movie;
+import se.iths.oscarp.GitAssignment.model.Movie;
 
 import java.util.ArrayList;
 import java.util.List;
