@@ -1,4 +1,4 @@
-package se.iths.oscarp.vblesson2.model;
+package se.iths.oscarp.GitAssignment.model;
 
 public class User {
     private int id;
@@ -8,7 +8,8 @@ public class User {
     public User() {
     }
 
-    public User(String name, int age) {
+    public User(int id, String name, int age) {
+        this.id = id;
         this.name = name;
         this.age = age;
     }
