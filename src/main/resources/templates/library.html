@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Library</title>
+</head>
+<body>
+<h1>Welcome to the library this is the available books!</h1>
+<ul>
+    <li th:each="library : ${books}">
+        <span th:text="'id: ' + ${library.getId()}"></span>
+        <span th:text="'Title: ' + ${library.getTitle()}"></span>
+        <span th:text="'Author: ' + ${library.getAuthor()}"></span>
+        <span th:text="'Publishing year: ' + ${library.getPublishYear()}"></span>
+    </li>
+</ul>
+</body>
+</html>
