@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Movie</title>
+</head>
+<body>
+<h1>Movies</h1>
+<ul>
+    <li th:each="movie : ${movies}">
+        <span th:text="'Title: ' + ${movie.getTitle()}"></span>
+        <span th:text="'Author: ' + ${movie.getAuthor()}"></span>
+        <span th:text="'Publishing year: ' + ${movie.getPublishedYear()}"></span>
+    </li>
+</ul>
+
+</body>
+</html>

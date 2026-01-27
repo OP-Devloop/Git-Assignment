@@ -9,6 +9,7 @@ import se.iths.oscarp.GitAssignment.service.HomeService;
 @Controller
 @RequestMapping("/")
 public class HomeController {
+
     private final HomeService homeService;
 
     public HomeController(HomeService homeService) {
@@ -18,7 +19,7 @@ public class HomeController {
 
     @GetMapping
     public String Home(Model model) {
-        model.addAttribute("message", "Hello from service");
+        model.addAttribute("message", "Welcome");
         model.addAttribute("title", "Main Menu");
         return "index";
     }
