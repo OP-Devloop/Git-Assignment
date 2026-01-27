@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Accessories</title>
+</head>
+<body>
+<h1>Accessories</h1>
+<ul>
+    <li th:each="accessory : ${acList}">
+
+        <span th:text="'| Name: ' + ${accessory.name}"></span>
+        <span th:text="'| Description: ' + ${accessory.description}"></span>
+        <span th:text="'| Price: £' + ${accessory.price}"></span>
+    </li>
+</ul>
+</body>
+</html>
