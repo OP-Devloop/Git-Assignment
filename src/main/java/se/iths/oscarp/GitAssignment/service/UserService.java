@@ -1,4 +1,4 @@
-package se.iths.oscarp.vblesson2.service;
+package se.iths.oscarp.GitAssignment.service;
 
 import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
