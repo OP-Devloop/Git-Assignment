@@ -8,10 +8,13 @@
 <h1>Accessories</h1>
 <ul>
     <li th:each="accessory : ${acList}">
-
-        <span th:text="'| Name: ' + ${accessory.name}"></span>
-        <span th:text="'| Description: ' + ${accessory.description}"></span>
-        <span th:text="'| Price: £' + ${accessory.price}"></span>
+        <div>
+            <strong th:text="${accessory.name}"></strong>
+            <span th:text="' - £' + ${accessory.price}"></span>
+        </div>
+        <div>
+            <span th:text="${accessory.description}"></span>
+        </div>
     </li>
 </ul>
 </body>
