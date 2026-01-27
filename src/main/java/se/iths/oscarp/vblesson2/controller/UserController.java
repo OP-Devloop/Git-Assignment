@@ -3,11 +3,10 @@ package se.iths.oscarp.vblesson2.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import se.iths.oscarp.vblesson2.service.UserService;
 
 @Controller
-@RequestMapping("/user")
 public class UserController {
     private final UserService userService;
 
@@ -15,9 +14,8 @@ public class UserController {
         this.userService = userService;
     }
 
-    @GetMapping
-    public String User(Model model) {
-        model.addAttribute("message", "Welcome User");
-        return "user";
+    @GetMapping("/user")
+    public @ResponseBody String User(Model model) {
+        return userService.userList(model);
     }
 }
