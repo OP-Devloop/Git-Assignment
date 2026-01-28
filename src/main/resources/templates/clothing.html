@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Clothing store</title>
+</head>
+<body>
+<ul>
+    <li th:each="clothing : ${clothes}">
+        <span th:text="'id: ' + ${clothing.getId()}"></span>
+        <span th:text="'type of clothing: ' + ${clothing.getClothing()}"></span>
+        <span th:text="'price: ' + ${clothing.getPrice()}"></span>
+    </li>
+</ul>
+
+</body>
+</html>
