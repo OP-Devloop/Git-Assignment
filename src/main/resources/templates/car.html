@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cars</title>
+</head>
+<body>
+<h1>Cars</h1>
+<ul>
+    <li th:each="car : ${car}">
+        <span th:text="'Car: ' + ${car.manufactures}+' | '"></span>
+        <span th:text="'Model: ' + ${car.model} + ' | '"></span>
+        <span th:text="'Color: '+ ${car.color}"></span>
+    </li>
+</ul>
+</body>
+</html>
