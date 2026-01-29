@@ -2,9 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Welcome!</title>
+    <title>Main Menu</title>
 </head>
 <body>
-<h1 th:text="${message} + '!'">Standard text</h1>
+
+<h1 th:text="${title}"></h1>
+
+<ul>
+    <li><a th:href="@{/login}">Login</a></li>
+    <li><a th:href="@{/accessories}">Accessories</a></li>
+    <li><a th:href="@{/smarthome}">Smart Home</a></li>
+    <li><a th:href="@{/clothing}">Clothing</a></li>
+    <li><a th:href="@{/movies}">Movies</a></li>
+    <li><a th:href="@{/library}">Library</a></li>
+    <li><a th:href="@{/user}">Users</a></li>
+</ul>
+
 </body>
 </html>
