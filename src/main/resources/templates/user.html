@@ -7,10 +7,10 @@
 <body>
 <h1>User</h1>
 <ul>
-    <li th:each="user: ${user}">
-        <span th:text="${user.getId}"></span>
-        <span th:text="${user.getName}"></span>
-        <span th:text="${user.getAge}"></span>
+    <li th:each="user : ${user}">
+        <span th:text="${user.id}"></span>
+        <span th:text="${user.name}"></span>
+        <span th:text="${user.age}"></span>
     </li>
 </ul>
 </body>

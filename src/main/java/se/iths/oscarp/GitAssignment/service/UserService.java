@@ -1,7 +1,6 @@
 package se.iths.oscarp.GitAssignment.service;
 
 import org.springframework.stereotype.Service;
-import org.springframework.ui.Model;
 import se.iths.oscarp.GitAssignment.model.User;
 
 import java.util.List;
@@ -12,13 +11,11 @@ public class UserService {
         return "Welcome";
     }
 
-    public String userList(Model model) {
-        List<User> users = List.of(
+    public List<User> userList() {
+        return List.of(
                 new User(1, "Anna", 25),
                 new User(2, "Bert", 32),
                 new User(3, "Charly", 22)
         );
-        model.addAttribute("users", users);
-        return "user";
     }
 }
