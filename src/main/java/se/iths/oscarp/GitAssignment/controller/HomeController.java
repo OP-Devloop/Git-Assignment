@@ -18,7 +18,7 @@ public class HomeController {
 
     @GetMapping
     public String Home(Model model) {
-        model.addAttribute("title", "Philip Menu");
+        model.addAttribute("title", "Main Menu");
         return "index";
     }
 }
